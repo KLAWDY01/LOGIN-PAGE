@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <img src="images/BUP2.png" alt="BUP Logo" class="logo">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1><br>
+                <div class="inline-selects">
+                   <select name="Department" id="department">
+                      <option value="">Department</option>
+                      <option value="Engr">Engineering Department</option>
+                      <option value="TED">Technology & Entrepreneurship Department</option>
+                      <option value="CSD">Computer Studies Department</option>
+                      <option value="NURS">Nursing Department</option>
+                      <option value="TEDD">Teacher Education Department</option>
+                   </select>
+            
+                  <select name="Course" id="course">
+                     <option value="">Course</option>
+                  </select>
+            
+                  <select name="Year" id="year">
+                     <option value="">Year</option>
+                     <option value="1st Year">1st Year</option>
+                     <option value="2nd Year">2nd Year</option>
+                     <option value="3rd Year">3rd Year</option>
+                     <option value="4th Year">4th Year</option>
+                  </select>
+            
+                  <select name="Block" id="block">
+                     <option value="">Block</option>
+                     <option value="A">A</option>
+                     <option value="B">B</option>
+                     <option value="C">C</option>
+                  </select>
+                </div>
+
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last name">
+                <input type="Student Number" placeholder="Student Number">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password"><br>
+                <button type="button">SUBMIT</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="images/BUP2.png" alt="BUP Logo" class="logo2">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your BU Account to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                        <h1 class="heading">THESIS <br> BOOK <br>RECORD</h1>
+                        <h4>Don't have an account?</h4><br>
+                        <button class="hidden" id="register">Sign Up</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginscrip.js"></script>
+</body>
+
+</html>
