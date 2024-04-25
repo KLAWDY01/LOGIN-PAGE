@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>BUP Thesis Book Record Login Page</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <img src="images/BUP2.png" alt="BUP Logo" class="logo">
+        <div class="form-container sign-up">
+            <form>
+                <img src="images/adminLOGO.png" class="adminLOGO">
+                <h3>Admin</h3><br>
+                <input type="username" placeholder="Username">
+                <input type="password" placeholder="Password"><br>
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+              <img SRC="images/studentLOGO.png" class="studentLOGO">
+              <h3>User</h3><br>
+                <input type="StudNum" placeholder="Student Number">
+                <input type="password" placeholder="Password">
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="images/BUP2.png" alt="BUP Logo" class="logo2">
+                    <p>Enter your BU Account to use all of site features</p>
+                    <button class="hidden" id="login">Sign In as User</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                        <h1 class="heading">THESIS <br> BOOK <br>RECORD</h1>
+                        <button class="hidden" id="register">Sign In as Admin</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginscrip.js"></script>
+</body>
+
+</html>

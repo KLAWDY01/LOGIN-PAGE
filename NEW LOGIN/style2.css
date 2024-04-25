@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    max-width: 100%;
+    min-height: 650px;
+}
+
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button{
+    background-color: #0F6FC5;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 45px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: #fff;
+    color: #333;
+    font-weight: 1500;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 13px 18px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 90%;
+    outline: none;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+
+}
+
+.toggle{
+    background-color: #FF8602;
+    height: 100%;
+    background: linear-gradient(to right, #FFCC01, #FF7C02);
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+    background-image: url('images/loginimg.png');
+    background-size: 670pX;
+    background-repeat: no-repeat;
+    background-position: calc(100% - -30px) calc(100% - -200px);
+    padding: 0px;
+    text-align: center; 
+}
+
+.toggle-right .content {
+    position: relative;
+    z-index: 1;
+}
+
+.toggle-panel.toggle-right .heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+.toggle-right button {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+.logo {
+        position: absolute;
+        top: 20px;
+        left: 1px;
+        width: 450px;
+        height: auto;
+        z-index: 100;
+}
+
+.container {
+    position: relative;
+}
+
+.logo2 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 400px;
+    height: auto;
+    z-index: 100;
+}
+
+.adminLOGO{
+    width: 100px;
+
+}
+
+.studentLOGO{
+    width: 90px;
+
+}
+
+select{
+    background-color: #eee;
+    color: #757575;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 50%;
+    outline: none;
+}
+
+.inline-selects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container form .inline-selects select {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.container form .inline-selects select:last-child {
+    margin-right: 0;
+}
