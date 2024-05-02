@@ -17,7 +17,6 @@ body {
     background: linear-gradient(to bottom, #ddc511, #e3a508, #e87605); /* Gradient from top to bottom */
     transition: all 0.5s;
 }
-
 .sidebar header{
     font-size: 22px;
     color: white;
@@ -102,7 +101,6 @@ section {
     font-size: 36px; /* Adjust the font size as needed */
     transition: all .5s;
 }
-/* styles.css */
 
 
 .analytics-panel {
@@ -114,7 +112,6 @@ section {
     min-height: 300px;
     transition: all .5s;
 }
-
 
 h2 {
     margin-bottom: 10px;
